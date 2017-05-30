@@ -1,0 +1,64 @@
+-----------------------Potential----------------------------------------------
+        0.7500000000  #translocation length
+        0.3000000000  #Delta + 
+        0.8000000000  #Barrier Height Vb
+        0.1000000000  # Energy shift between occupied and unoccupied Potential
+        0.0000000000   #x-shift
+-----------------------Vibronic-----------------------------------------
+        1.0000000000  #Omega (.1) 
+        0.0000000000  #Lambda (0.06)
+        0.3000000000  #Parabola Shift (.3)
+-----------------------Switch Function-----------------------------------------
+        0.1000000000  #A
+        1.0000000000  #B
+        7.0000000000  #C
+        0.0000000000  #switchShift
+-------------------------Voltage Grid---------------------) 
+                   1  #Bias Grid
+        0.0000000000 #start voltage
+        0.1000000000 #end voltage
+2----------------------Field Grid----------------------------------------------
+                 160  #Gate Grid  ## Vorher 1200
+       -8.0000000000  #Voltage gate1 (= intial Gate voltage!)
+        8.0000000000  #Voltage gate2
+        1.0000000000  #d in nano meter
+-----------------------Field in Dependance of V--------------------------------
+        1.0000000000  #Gate Grid
+       90.0000000000  #Angle 
+        1.0000000000  #transshift
+-----------------------Self-Energy---------------------------------------------
+------------Left- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        3.0000000000  #beta1
+        0.1000000000  #beta2
+                       #someday a new variable...
+------------Right - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        3.0000000000  #beta1
+        0.1000000000  #beta2
+                       #someday a new variable...
+------------Left & Right - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        293.00000000  #Temperature
+        0.0000000000  #Fermi-Level
+-----------------------Time Evolution- - - - - - - - - - - - - - - - - - - - - -
+              100000     #Time step
+         1.00000d+00     #Time start in au
+    1.0000000000d+07     #Time End in au
+-----------------------Various Parameter Grid- - - - - - - - - - - - - - - - - -
+                1000  #Paramter Grid
+        0.0000000000  #Parameter 1
+     1000.0000000000  #Parameter 2
+-----------------------Harmonic Bath Parameters-----------------------------------
+        0.0970000000  #Wcut
+        0.0400000000  #eta
+      293.0000000000  #Temperature of the harmonic Bath
+-----------------------Pure State Management-----------------------------------
+         0           Initial occupation switching. 2 for pure state
+         1           Initial state number
+         2           Second Initial state number
+-----------------------Second Set of Double Well Parameters--------------------
+        1.2500000000  #2nd translocation length
+        0.1000000000  #2nd Delta + 
+        0.5000000000  #2nd Barrier Height Vb
+-----------------------Complex Numbers for the pure state superpostion----------
+(0.5d0                   ,0.5d0)
+(0.5d0                   ,0.5d0)
+-----------------------END OF INPUTFILE-----------------------------------

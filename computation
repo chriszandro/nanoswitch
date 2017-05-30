@@ -1,0 +1,50 @@
+---------------Program Mode-------------------------------------
+                   1           #Program-Mode | 1: Voltage-Loop
+                   1           #Output System Generation: 0: No output, 1: Output
+                   1           #rhox Output 0: No output, 1: Output
+                   1           #surface Output 0: No output, 1: Output
+                   1           #population Output 0: No output, 1: Output
+                   1           # Performance File 0: No output, 1: Output
+                   1           #Summary 0: No output, 1: Output
+                   1           # Franck - Condon Matrix 0: No output, 1: Output
+                  20           # Number of Population 
+---------------System-------------------------------------------
+                3000           #Number of Grid Points N
+                   1           #N 
+        1.000000e+01           Fourier 
+                   0           #id
+--------------MasterEq-----------------------------------------
+                  40             #medim00          Dimension 00
+                  40             #medim11          Dimension 11
+                   5             #meBand           Bandwidth
+                   5             #meBand           Bandwidth
+----------------OuputPaths--------------------------------------
+--- System output filepath
+/home/vault/mpet/mpet07/projects/paper/zerovolt/noenv
+--- Summary output filepath
+/home/vault/mpet/mpet07/projects/paper/zerovolt/noenv
+--- Result output filepath
+/home/vault/mpet/mpet07/projects/paper/zerovolt/noenv
+---------------Time Evolution-----------------------------------
+                   1             #Evaluation Method (1=expokit chebjev, 2=zvode, 3=expokit pade)
+                   2             #Pade Coefficient for Calcs
+---------------Schroedinger ------------------------------------
+                   2             #Logical for Eigensystem Routine for Schroedinger
+                   0           
+---------------------------ups -------------------------------
+                   0             #Boolean for timestamps in the outputfiles 
+        3.000000e+00           xrange for the 3d plots 
+                   0           append bool for performance testing
+        1.000000e-06           tolerance parameter for the 3d plots
+---------------------------Baths -------------------------------
+                   1             #(=1 for including fermion both, 0 otherwise) 
+                   1           (=1 for including harmonic bath, 0 otherwise 
+---------------------------Initial States -------------------------------
+                   5           Initial state for time evolution. 1 for conventinal switching. 2 for pure state
+---------------------------Initial States -------------------------------
+                   1           Computation Modell 
+                   1           Computation Modell Paramter 2 
+---------------End Of File------------------------------------
+Modes: 1 CVC Mode bias-independent | 2 Varying Gate Voltage with constant voltage |
+ 3 CVC with heatmaps | 4 CVC biasDEPENDENT |20 Zvode Time Evolution | 30 Expokit Time Evolution |
+ 50 Snaptshot Mode | 42...
